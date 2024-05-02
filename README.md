@@ -17,7 +17,7 @@ Repositório do bootcamp que estou fazendo na DIO, python AI backend developer
     - criando cadastro de usuários;
         - criei a função para validar se o usuário já está cadastrado;
         - fiz a função de cadastrar, que é salva numa lista de dicionários com os atributos solicitados;
-        - feita a função para cadastrar uma conta;
-        - feita a função de listar as contas do usuário pelo cpf;
+    - feita a função para cadastrar uma conta;
+    - feita a função de listar as contas do usuário pelo cpf;
 
 
