@@ -21,3 +21,13 @@ Repositório do bootcamp que estou fazendo na DIO, python AI backend developer
     - feita a função de listar as contas do usuário pelo cpf;
 
 ### [desafio sistema bancário poo](./desafios/desafio_sistema_bancario_poo.py)
+
+    - transformação dos desafios anteriores para o paradigma de programação orientada a objetos;
+
+### [desafio sistema bancário decorador log terminal](./desafios/desafio_sistema_bancario_decorador.py)
+
+    - transformação dos desafios anteriores para trabalhar com o decorador de transação, que informa os dados da transação como log no terminal;
+
+### [desafio sistema bancário manipulação de arquiivos](./desafios/desafio_sistema_bancario_log_arquivo.py)
+
+    - transformação dos desafios anteriores para trabalhar com o gravador de logs em arquivos .txt;
