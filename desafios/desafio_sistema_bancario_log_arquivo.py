@@ -1,6 +1,9 @@
 import textwrap
 from abc import ABC, abstractclassmethod, abstractproperty
 from datetime import datetime
+from pathlib import Path
+
+PATH_FILE = Path(__file__).parent
 
 
 class ContasIterador:
@@ -236,14 +239,20 @@ def log_transacao(func):
 
         argumentos = ""
 
-        for index, argumento in enumerate(args):
-            if index == 0:
+        for argumento in args:
+            if argumentos == "":
+                argumentos += f"{argumento}"
+            else: 
+                argumentos += f", {argumento}"
+
+        for argumento in kwargs:
+            if argumentos == "":
                 argumentos += f"{argumento}"
             else: 
                 argumentos += f", {argumento}"
 
         try:
-            with open("./log.txt", "a", encoding="utf-8") as file_log:
+            with open(PATH_FILE / "log.txt", "a", encoding="utf-8") as file_log:
                 file_log.write(f"[{data_hora}] - executando [{nome_funcao}] - argumentos [{argumentos}]- retorno [{resultado}]\n")
 
         except IOError as exc:
